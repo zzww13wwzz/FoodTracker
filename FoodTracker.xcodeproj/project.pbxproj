@@ -14,6 +14,8 @@
 		B80D81141F1559B000DB6DDF /* FoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B80D81121F1559B000DB6DDF /* FoodTracker.xcdatamodeld */; };
 		B80D81161F1559B000DB6DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B80D81151F1559B000DB6DDF /* Assets.xcassets */; };
 		B80D81191F1559B000DB6DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80D81171F1559B000DB6DDF /* LaunchScreen.storyboard */; };
+		B86602B91F155DC80034E0F6 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86602B81F155DC80034E0F6 /* ItemsTableViewController.m */; };
+		B86602BC1F1561680034E0F6 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86602BB1F1561680034E0F6 /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		B80D81151F1559B000DB6DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B80D81181F1559B000DB6DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B80D811A1F1559B000DB6DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B86602B71F155DC80034E0F6 /* ItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsTableViewController.h; sourceTree = "<group>"; };
+		B86602B81F155DC80034E0F6 /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
+		B86602BA1F1561680034E0F6 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		B86602BB1F1561680034E0F6 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +70,11 @@
 				B80D810A1F1559B000DB6DDF /* AppDelegate.m */,
 				B80D810C1F1559B000DB6DDF /* ViewController.h */,
 				B80D810D1F1559B000DB6DDF /* ViewController.m */,
+				B86602B71F155DC80034E0F6 /* ItemsTableViewController.h */,
+				B86602B81F155DC80034E0F6 /* ItemsTableViewController.m */,
 				B80D810F1F1559B000DB6DDF /* Main.storyboard */,
+				B86602BA1F1561680034E0F6 /* InputViewController.h */,
+				B86602BB1F1561680034E0F6 /* InputViewController.m */,
 				B80D81151F1559B000DB6DDF /* Assets.xcassets */,
 				B80D81171F1559B000DB6DDF /* LaunchScreen.storyboard */,
 				B80D811A1F1559B000DB6DDF /* Info.plist */,
@@ -155,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B80D81141F1559B000DB6DDF /* FoodTracker.xcdatamodeld in Sources */,
+				B86602BC1F1561680034E0F6 /* InputViewController.m in Sources */,
+				B86602B91F155DC80034E0F6 /* ItemsTableViewController.m in Sources */,
 				B80D810E1F1559B000DB6DDF /* ViewController.m in Sources */,
 				B80D810B1F1559B000DB6DDF /* AppDelegate.m in Sources */,
 				B80D81081F1559B000DB6DDF /* main.m in Sources */,
@@ -316,6 +328,7 @@
 				B80D811F1F1559B000DB6DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
