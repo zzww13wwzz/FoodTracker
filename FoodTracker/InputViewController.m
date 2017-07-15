@@ -29,11 +29,12 @@
     self.unswerLabel.text = @"Please write weight";
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
 {
-    
+//    [self submitAction:nil];
+    NSLog(@"input = %@", textField.text);
+    return YES;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
