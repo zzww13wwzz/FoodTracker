@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface InputViewController : UIViewController
+@property (nonatomic, strong) NSString *foodName;
 
 @end
