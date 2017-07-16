@@ -22,7 +22,7 @@ public class Main {
                 System.out.println(calories);
                 String weight = resultSet.getString("weight" );
                 System.out.println(weight);
-                
+
 
             }
 
