@@ -16,6 +16,7 @@
 		B80D81191F1559B000DB6DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80D81171F1559B000DB6DDF /* LaunchScreen.storyboard */; };
 		B86602B91F155DC80034E0F6 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86602B81F155DC80034E0F6 /* ItemsTableViewController.m */; };
 		B86602BC1F1561680034E0F6 /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86602BB1F1561680034E0F6 /* InputViewController.m */; };
+		B86B14B31F1BF2FB001A6EA4 /* FoodAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B14B21F1BF2FB001A6EA4 /* FoodAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		B86602B81F155DC80034E0F6 /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
 		B86602BA1F1561680034E0F6 /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
 		B86602BB1F1561680034E0F6 /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
+		B86B14B11F1BF2FB001A6EA4 /* FoodAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodAPI.h; sourceTree = "<group>"; };
+		B86B14B21F1BF2FB001A6EA4 /* FoodAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				B80D811A1F1559B000DB6DDF /* Info.plist */,
 				B80D81121F1559B000DB6DDF /* FoodTracker.xcdatamodeld */,
 				B80D81061F1559B000DB6DDF /* Supporting Files */,
+				B86B14B11F1BF2FB001A6EA4 /* FoodAPI.h */,
+				B86B14B21F1BF2FB001A6EA4 /* FoodAPI.m */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				B86602B91F155DC80034E0F6 /* ItemsTableViewController.m in Sources */,
 				B80D810E1F1559B000DB6DDF /* ViewController.m in Sources */,
 				B80D810B1F1559B000DB6DDF /* AppDelegate.m in Sources */,
+				B86B14B31F1BF2FB001A6EA4 /* FoodAPI.m in Sources */,
 				B80D81081F1559B000DB6DDF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
