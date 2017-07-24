@@ -1,37 +1,35 @@
-package com.food.clear.Controller;
+package com.food.clear.controller;
 
-import com.food.clear.Manager.ITaskManager;
+import com.food.clear.service.IFoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/app")
+@RequestMapping("/")
 public class FoodController {
 
     @Autowired
-    private ITaskManager taskManager;
+    private IFoodService taskManager;
     //http://localhost:8080/app/hello
 
-    @RequestMapping(value="hello")
+    @RequestMapping(value="/hello", method = RequestMethod.GET)
     public String hello() {
-        System.out.println("1111111111");
         return "Hello, world";
     }
 
     @RequestMapping (value = "GetAllFoodNames")
     public List<String> findAllByName() {
-        System.out.println("1111111111");
         return taskManager.getFoodNames();
     }
 
-    @RequestMapping(value = "GetCalories")
+    @RequestMapping(value = "calories", method = RequestMethod.GET)
     public float getCalories(@RequestParam("foodName") String name,
                               @RequestParam("foodWeight") float weight) {
-        System.out.println("2222222222222");
         return taskManager.getCalories(name, weight);
     }
 

@@ -1,10 +1,8 @@
-package com.food.clear.Repository;
+package com.food.clear.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Food {
@@ -13,10 +11,8 @@ public class Food {
     private long id;
     private String name;
     private float calories;
-    private float weight;
 
-    public  float calculateCalloriesByWeight(float weight)
-    {
+    public  float calculateCaloriesByWeight(float weight) {
         return ( getCalories() * weight ) / 100;
     }
 
@@ -45,11 +41,4 @@ public class Food {
         this.calories = calories;
     }
 
-    public float getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
-        this.weight = weight;
-    }
 }
