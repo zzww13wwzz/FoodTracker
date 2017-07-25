@@ -10,6 +10,7 @@ import java.util.List;
 
 @Service
 public class FoodService implements IFoodService {
+
     @Autowired
     private FoodRepository foodRepository;
 

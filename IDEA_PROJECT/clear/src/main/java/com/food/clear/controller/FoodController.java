@@ -14,23 +14,18 @@ import java.util.List;
 public class FoodController {
 
     @Autowired
-    private IFoodService taskManager;
+    private IFoodService foodService;
     //http://localhost:8080/app/hello
 
-    @RequestMapping(value="/hello", method = RequestMethod.GET)
-    public String hello() {
-        return "Hello, world";
-    }
-
-    @RequestMapping (value = "GetAllFoodNames")
+    @RequestMapping (value = "/foodNames", method = RequestMethod.GET)
     public List<String> findAllByName() {
-        return taskManager.getFoodNames();
+        return foodService.getFoodNames();
     }
 
-    @RequestMapping(value = "calories", method = RequestMethod.GET)
+    @RequestMapping(value = "/calories", method = RequestMethod.GET)
     public float getCalories(@RequestParam("foodName") String name,
                               @RequestParam("foodWeight") float weight) {
-        return taskManager.getCalories(name, weight);
+        return foodService.getCalories(name, weight);
     }
 
 }
