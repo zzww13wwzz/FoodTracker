@@ -1,6 +1,7 @@
 package com.food.clear.controller;
 
 import com.food.clear.service.IFoodService;
+import com.food.clear.service.exceptions.ListIsEmptyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,8 +19,12 @@ public class FoodController {
     //http://localhost:8080/app/hello
 
     @RequestMapping (value = "/foodNames", method = RequestMethod.GET)
-    public List<String> findAllByName() {
-        return foodService.getFoodNames();
+    public List<String> findAllByName() throws ListIsEmptyException {
+        try {
+            return foodService.getFoodNames();
+        } catch (ListIsEmptyException e) {
+            return (List<String> )
+        }
     }
 
     @RequestMapping(value = "/calories", method = RequestMethod.GET)
