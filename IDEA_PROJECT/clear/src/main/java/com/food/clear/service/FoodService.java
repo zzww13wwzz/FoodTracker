@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 @Service
 public class FoodService implements IFoodService {
@@ -42,20 +45,19 @@ public class FoodService implements IFoodService {
     }
 
     @Override
-    public float getCalories(String name, float weight) throws InputValueValidationException {
+    public float getCalories(String name, String weight) throws InputValueValidationException {
+
         if (foodRepository.findByName(name) == null) {
-            throw new IllegalArgumentException("Food not found");
+            throw new InputValueValidationException("Food not found");
         }
 
-        Scanner scanner = new Scanner(System.in);
-
         try {
-            int usrInput=scanner.nextInt();
-        } catch (InputMismatchException exception) {
+            Float.parseFloat(weight);
+        } catch (NumberFormatException e) {
+            System.out.println("catch");
             throw new InputValueValidationException("Invalid input weight");
         }
 
-        return foodRepository.findByName(name).calculateCaloriesByWeight(weight);
+        return foodRepository.findByName(name).calculateCaloriesByWeight(new Float(weight).floatValue());
     }
-
 }
