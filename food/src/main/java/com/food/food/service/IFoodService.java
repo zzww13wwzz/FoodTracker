@@ -1,7 +1,7 @@
-package com.food.clear.service;
+package com.food.food.service;
 
-import com.food.clear.service.exceptions.InputValueValidationException;
-import com.food.clear.service.exceptions.ListIsEmptyException;
+import com.food.food.service.exceptions.InputValueValidationException;
+import com.food.food.service.exceptions.ListIsEmptyException;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.food.clear.service.exceptions;
+package com.food.food.service.exceptions;
 
 
 public class InputValueValidationException extends Exception {

@@ -1,9 +1,8 @@
-package com.food.clear.controller;
+package com.food.food.controller;
 
-import com.food.clear.service.IFoodService;
-import com.food.clear.service.exceptions.InputValueValidationException;
-import com.food.clear.service.exceptions.ListIsEmptyException;
-import org.slf4j.LoggerFactory;
+import com.food.food.service.IFoodService;
+import com.food.food.service.exceptions.InputValueValidationException;
+import com.food.food.service.exceptions.ListIsEmptyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/")

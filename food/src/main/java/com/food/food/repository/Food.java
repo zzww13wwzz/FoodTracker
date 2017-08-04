@@ -1,4 +1,4 @@
-package com.food.clear.repository;
+package com.food.food.repository;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

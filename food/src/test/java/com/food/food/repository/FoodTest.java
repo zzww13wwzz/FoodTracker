@@ -1,4 +1,4 @@
-package com.food.clear.repository;
+package com.food.food.repository;
 
 import org.junit.After;
 import org.junit.Before;

@@ -1,12 +1,11 @@
-package com.food.clear;
+package com.food.food;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-//@EnableAutoConfiguration
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.food.clear"})
+@ComponentScan(basePackages = {"com.food.food"})
 public class ClearApplication {
 
 	public static void main(String[] args) {

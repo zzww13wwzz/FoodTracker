@@ -1,4 +1,4 @@
-package com.food.clear.service.exceptions;
+package com.food.food.service.exceptions;
 
 /**
  * Created by zzvv13vvzz on 7/26/17.
