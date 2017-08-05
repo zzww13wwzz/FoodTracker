@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface IFoodService {
 
-    List <String>getFoodNames() throws ListIsEmptyException;
-    float getCalories(String name, String weight) throws InputValueValidationException;
+    List<String> getFoodNames();
+    float getCalories(String name, String weight);
 }

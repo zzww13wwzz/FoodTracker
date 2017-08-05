@@ -39,6 +39,7 @@ public class FoodService implements IFoodService {
 //                .collect(Collectors.toList());
     }
 
+
     @Override
     public float getCalories(String name, String weight) throws InputValueValidationException {
 
@@ -49,7 +50,6 @@ public class FoodService implements IFoodService {
         try {
             Float.parseFloat(weight);
         } catch (NumberFormatException e) {
-            System.out.println("catch");
             throw new InputValueValidationException("Invalid input weight");
         }
 

@@ -1,9 +1,8 @@
 package com.food.food.service.exceptions;
 
 
-public class InputValueValidationException extends Exception {
+public class InputValueValidationException extends RuntimeException {
     public InputValueValidationException(String s) {
         super(s);
-        System.out.println("InputValueValidationException");
     }
 }
